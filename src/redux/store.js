@@ -1,8 +1,9 @@
 
 // const redux = require("redux");
 
-import redux from "redux";
-import todoReducer from "./reducers/todoReducer";
+import * as redux from "redux"
+// import { legacy_createStore as createStore} from 'redux'
+import {todoReducer} from "./reducers/todoReducer.js";
 
-export const store = redux.createStore(todoReducer);
+ export const store = redux.createStore(todoReducer);
 
